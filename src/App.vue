@@ -4,7 +4,7 @@
       src="./assets/vue.svg"
       alt="Vue logo"
       width="100" />
-    <h1>环境变量实测</h1>
+    <h1>我的第一个自动化上线项目 - 成功！</h1>
 
     <div style="border: 1px solid #ccc; padding: 20px; display: inline-block">
       <p>
