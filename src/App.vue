@@ -4,7 +4,7 @@
       src="./assets/vue.svg"
       alt="Vue logo"
       width="100" />
-    <h1>那咋了222</h1>
+    <h1>那咋了</h1>
 
     <div style="border: 1px solid #ccc; padding: 20px; display: inline-block">
       <p>
