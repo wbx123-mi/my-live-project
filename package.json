@@ -27,5 +27,8 @@
     "vite": "^6.0.0",
     "vite-plugin-pwa": "^1.2.0",
     "vue-tsc": "^3.2.5"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.60.0"
   }
 }
