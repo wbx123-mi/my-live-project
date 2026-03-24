@@ -137,13 +137,15 @@ const md = new MarkdownIt({
   html: true,
   linkify: true,
   typographer: true,
-  highlight: function (str, lang) {
+  // 找到类似这样的代码块
+  highlight: function (str: string, lang: string) {
+    // ✨ 加上 : string
     if (lang && hljs.getLanguage(lang)) {
       try {
         return hljs.highlight(str, { language: lang }).value;
       } catch (__) {}
     }
-    return ''; // 使用默认转义
+    return '';
   },
 });
 
