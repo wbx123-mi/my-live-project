@@ -1,0 +1,44 @@
+// src/assets/styles/_variables.scss
+
+// 品牌与渐变
+$primary-color: #667eea;
+$primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+$sidebar-bg-gradient: linear-gradient(180deg, #2c3e50 0%, #1a2530 100%);
+
+// 文字颜色
+$text-light: #ecf0f1;
+$text-muted: #bdc3c7;
+$text-dark: #7f8c8d;
+$text-tree: #95a5a6;
+
+// 交互与装饰
+$sidebar-border: rgba(255, 255, 255, 0.1);
+$hover-bg: rgba(255, 255, 255, 0.05);
+$active-bg: rgba(102, 126, 234, 0.1);
+$content-bg: #f5f7fa;
+
+// 动画
+$transition-base: all 0.3s ease;
+$transition-fast: all 0.2s ease;
+
+// src/assets/styles/_variables.scss 补充
+$card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+$card-shadow-hover: 0 8px 24px rgba(102, 126, 234, 0.2);
+$border-radius-lg: 20px;
+$border-radius-md: 16px;
+$border-radius-sm: 12px;
+
+$error-red: #e74c3c;
+$breadcrumb-separator: #bdc3c7;
+$markdown-dark-bg: #1a2530;
+
+// 状态色
+$color-idle: #7f8c8d;
+$color-pending: #f39c12;
+$color-success: #27ae60;
+$color-error: #e74c3c;
+
+// 背景色
+$bg-light: #f8f9fa;
+$bg-dark: #1a2530;
+$editor-header: #2c3e50;

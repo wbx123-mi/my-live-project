@@ -1,19 +1,6 @@
 <template>
-  <div style="text-align: center; margin-top: 100px; font-family: sans-serif">
-    <img
-      src="./assets/vue.svg"
-      alt="Vue logo"
-      width="100" />
-    <h1>那咋了</h1>
-
-    <div style="border: 1px solid #ccc; padding: 20px; display: inline-block">
-      <p>
-        当前运行环境：<strong style="color: #646cff">{{ envName }}</strong>
-      </p>
-      <p>
-        Axios 将会请求：<code>{{ baseUrl }}</code>
-      </p>
-    </div>
+  <div id="app">
+    <!-- PWA 更新提示 -->
     <div
       v-if="needRefresh"
       class="update-pwa-toast">
@@ -21,14 +8,12 @@
       <button @click="updateServiceWorker()">立即更新</button>
       <button @click="close">稍后</button>
     </div>
+    <!-- 路由出口 -->
+    <router-view />
   </div>
 </template>
 
 <script setup lang="ts">
-// 获取 Vite 注入的环境变量
-const envName = import.meta.env.VITE_APP_ENV_NAME;
-const baseUrl = import.meta.env.VITE_APP_BASE_URL;
-
 import { useRegisterSW } from 'virtual:pwa-register/vue';
 
 // 注册 Service Worker，它会返回一个“是否有更新”的变量和“刷新方法”
