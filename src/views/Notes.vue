@@ -129,7 +129,7 @@
 import { ref, computed, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import MarkdownIt from 'markdown-it';
-import hljs from 'highlight.js';
+import hljs from '@/utils/hljs';
 import 'highlight.js/styles/github-dark.css'; // 引入暗色代码主题
 
 // 初始化 markdown 解析器
